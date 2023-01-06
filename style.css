@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+:root {
+    --bg-color: #dfebea;
+    --form-bg: #ffffff;
+    --radio: #dfebea;
+    --form-button: #130f28;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:hover {
+    color: inherit;
+}
+
+form,
+fieldset,
+legend,
+input,
+label {
+    font-size: 1rem;
+    color: #000000;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+body * {
+    font-family: "Poppins", serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flex {
+    display: flex;
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 35rem;
+    padding: 4rem;
+    background: var(--form-bg);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.formContainer fieldset {
+    display: block;
+    height: 100%;
+    border: 0;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.standardBox,
+.advancedBox {
+    width: 100%;
+    max-width: 26rem;
+    background: var(--radio);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.standardBox input[type="radio"],
+.advancedBox input[type="radio"] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.standardBox input[type="radio"]:checked,
+.advancedBox input[type="radio"]:checked {
+    width: 1.2rem;
+    height: 1.2rem;
+    appearance: none;
+    -webkit-appearance: none;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 5px solid #000000;
+}
+
+.standardBox label,
+.advancedBox label {
+    font-size: 1.2rem;
+}
+
+.standardBox p,
+.advancedBox p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.standardBox {
+    margin-top: 2rem;
+}
+
+.advancedBox {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.radioBox {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.radioBox+p {
+    margin-left: 1.5rem;
+    /* MAMMA MIA! what was this? */
+}
+
+.termsBox,
+.newsletterBox {
+    width: 100%;
+    max-width: 26rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.termsBox label,
+.newsletterBox label {
+    flex: 1;
+}
+
+.newsletterBox {
+    margin-top: 1rem;
+}
+
+.termsBox input,
+.newsletterBox input {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.formContainer button {
+    border: 0;
+    margin-top: 2.5rem;
+    width: 100%;
+    max-width: 26rem;
+    padding: 0.875rem;
+    background: var(--form-button);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.formContainer button+span {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
